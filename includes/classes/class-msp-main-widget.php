@@ -92,4 +92,4 @@ endif;
 
 
 // init the widget
-add_action( 'widgets_init', create_function( '', 'register_widget("MSP_Main_Widget");' ) );
+add_action( 'widgets_init', function() {return register_widget("MSP_Main_Widget"); } ); 
